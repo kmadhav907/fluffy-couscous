@@ -1,0 +1,12 @@
+-- Create database MusicApp;
+-- use MusicApp;
+-- Create table CATEGORY(category_id int primary key auto_increment, name varchar(255));
+-- Create table ROLES(id int primary key, name varchar(30));
+-- create table USER (id int primary key auto_increment, first_name varchar(255), last_name varchar(255),email varchar(255), password varchar(255), role_id int, foreign key(role_id) references ROLES(id));
+-- show tables;
+
+-- Create table PRODUCT(id int primary key auto_increment, name varchar(255), category_id int, description varchar(255), price int,image varchar(255), foreign key(category_id) references CATEGORY(category_id));
+-- create table USER_ROLE(user_id int, role_id int , foreign key(user_id) references USER(id), foreign key(role_id) references ROLES(id));
+-- Insert into ROLES values (1 , "USER");
+-- Insert into ROLES values(2 , "ADMIN");
+--  insert into USER values (1, "SOMEONE","someOne", "abc@gmail.com","$2a$10$D0GWudG78lj3ntWa/zto7.gXBPTCqnyWsO6KQTi4AvUZvlrlxJbY.", 2);
